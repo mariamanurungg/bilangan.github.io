@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bilangan</title>
+    <!-- Favicon icon -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png"> -->
+    <!-- Pignose Calender -->
+    <link href="../assets/plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <!-- Chartist -->
+    <link rel="stylesheet" href="../assets/plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="../assets/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <!-- Custom Stylesheet -->
+    <link href="../assets/plugins/sweetalert/css/sweetalert.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <style>
+        div>ul>li {
+            list-style: square;
+            margin-left: 40px;
+        }
+
+        div>ol>li {
+            list-style: number;
+            margin-left: 40px;
+        }
+
+        .abjad>ol>li {
+            list-style: lower-latin;
+            margin-left: 40px;
+        }
+    </style>
+
+</head>
+
+<body style="overflow: hidden;">
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header bg-warning">
+            <div class="brand-logo">
+                <a href="../index.html">
+                    <b class="logo-abbr text-white"><i class="icon-home"></i></b>
+                    <span class="logo-compact"><i class="icon-home"></i></span>
+                    <span class="brand-title text-white"><i class="icon-home"></i>
+                        Bilangan
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header bg-primary">
+            <div class="header-content clearfix">
+
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-left">
+
+                </div>
+                <div class="header-right text-white mt-3 mr-3">
+                    <span>Membandingkan Banyak Benda</span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar bg-warning">
+            <div class="nk-nav-scroll bg-warning">
+                <div class="text-center">
+                    <img src="../assets/images/user/form-user.png" width="40%" alt="">
+                    <div class="text-white" style="width: 100%;">Maria Manurung</div>
+                </div>
+                <ul class="metismenu bg-warning" id="menu">
+                    <li class="nav-label">Daftar Isi</li>
+
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i> <span class="nav-text">Ayo Membilang Sampai dengan
+                                10</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="pengantar1.html">Pengantar</a></li>
+                            <li><a href="bilangan1.html">Menghitung, Membaca dan Menulis Bilangan</a></li>
+                            <li><a href="bilangan2.html">Membandingkan Banyak Benda</a></li>
+                            <li><a href="bilangan3.html">Menghitung Maju dan Mundur</a></li>
+                            <li><a href="bilangan4.html">Pasangan Bilangan</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i> <span class="nav-text">Penjumlahan Sampai dengan
+                                10</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="pengantar2.html">Pengantar</a></li>
+                            <li><a href="penjumlahan1.html">Cerita Penjumlahan</a></li>
+                            <li><a href="penjumlahan2.html">Berbagai Cara Melakukan Penjumlahan</a></li>
+                            <li><a href="penjumlahan3.html">Soal Cerita Penjumlahan</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i> <span class="nav-text">Pengurangan Sampai dengan
+                                10</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="pengantar3.html">Pengantar</a></li>
+                            <li><a href="pengurangan1.html">Cerita Pengurangan</a></li>
+                            <li><a href="pengurangan2.html">Berbagai Cara Melakukan Pengurangan</a></li>
+                            <li><a href="pengurangan3.html">Hubungan Penjumlahan dengan Pengurangan</a></li>
+                            <li><a href="pengurangan4.html">Soal Cerita Pengurangan</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="rangkuman.html" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">Rangkuman</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="evaluasi.html" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">Evaluasi</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="container-fluid mt-3">
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="row">
+                            <div class="col-lg">
+                                <div class="card isicontent" style="height: 530px; width: 100%;">
+                                    <div class="card-body justify-content-between">
+                                        <div class="content">
+                                            <div class="card-content">
+                                                <!-- Pendahuluan -->
+
+                                                <div class="content-card">
+                                                    <h1><u>Membandingkan Banyak Benda</u></h1>
+                                                    <div id="page1">
+
+                                                        <div class="text-center">
+                                                            <img src="../assets/img/gambar5.png" alt="">
+                                                        </div>
+
+                                                        <center>
+                                                            <div class="table-responsive">
+                                                                <table class="table text-center border header-border">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <img src="../assets/img/gambar6.png"
+                                                                                    alt="">
+                                                                                <br>
+                                                                                <h3>5 Kursi</h3>
+                                                                            </td>
+                                                                            <td>
+                                                                                <img src="../assets/img/gambar7.png"
+                                                                                    alt="">
+                                                                                <br>
+                                                                                <h3>7 Layang-Layang</h3>
+                                                                            </td>
+                                                                            <td>
+                                                                                <img src="../assets/img/gambar8.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </center>
+                                                        <h3>
+                                                            1. Sama Banyak
+                                                        </h3>
+                                                        <div class="brs">
+                                                            <p>
+                                                                Di taman ada 4 bola.
+                                                            </p>
+                                                            <p>
+                                                                Di taman ada 4 bebek.
+                                                            </p>
+                                                            <p>
+                                                                <img src="../assets/img/gambar9.png" alt="">
+                                                            </p>
+                                                        </div>
+                                                        <h3>
+                                                            2. Lebih Banyak
+                                                        </h3>
+                                                        <div class="brs">
+                                                            <p>
+                                                                Di taman ada 5 kursi.
+                                                            </p>
+                                                            <p>
+                                                                Di taman ada 4 sepeda.
+                                                            </p>
+                                                            <p>
+                                                                <img src="../assets/img/gambar10.png" alt="">
+                                                            </p>
+                                                        </div>
+                                                        <h3>
+                                                            3. Lebih Sedikit
+                                                        </h3>
+                                                        <div class="brs">
+                                                            <p>
+                                                                Di taman ada 4 kursi.
+                                                            </p>
+                                                            <p>
+                                                                Di taman ada 5 sepeda.
+                                                            </p>
+                                                            <p>
+                                                                <img src="../assets/img/gambar11.png" alt="">
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div id="page2" hidden>
+                                                        <div class="bord">
+                                                            <img src="../assets/img/to-do-list.png" width="auto"
+                                                                height="40px" alt=""> Ayo Mencoba
+                                                        </div>
+                                                        <div class="bordU">
+                                                            <div class="text-center">
+                                                                Ambil benda di sekitar kalian. Hitunglah jumlah benda.
+                                                            </div>
+                                                            <div class="brs">
+                                                                Bandingkan jumlahnya dengan benda milik teman kalian.
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-lg-5">
+                                                                    <img src="../assets/img/gambar12.png" alt="">
+                                                                </div>
+                                                                <div class="col-lg">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table header-border">
+
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div>
+                                                                                            Benda yang aku miliki adalah
+                                                                                            pensil warna <input
+                                                                                                type="text" id="merah">
+                                                                                        </div>
+                                                                                        <div>
+                                                                                            Jumlah benda yang aku miliki
+                                                                                            adalah <input type="text"
+                                                                                                id="jumlahmerah">
+                                                                                        </div>
+                                                                                    </td>
+
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div>
+                                                                                            Benda yang temanku miliki
+                                                                                            adalah pensil warna <input
+                                                                                                type="text" id="biru">
+                                                                                        </div>
+                                                                                        <div>
+                                                                                            Jumlah benda yang temanku
+                                                                                            miliki adalah <input
+                                                                                                type="text"
+                                                                                                id="jumlahbiru">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div>
+                                                                                            Benda yang temanku miliki
+                                                                                            adalah pensil warna <input
+                                                                                                type="text" id="biru">
+                                                                                        </div>
+                                                                                        <div>
+                                                                                            Jumlah benda yang temanku
+                                                                                            miliki adalah <input
+                                                                                                type="text"
+                                                                                                id="jumlahbiru">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <a onclick="cekjawaban21()" type="button"
+                                                                        class="btn text-white btn-primary">Cek
+                                                                        Jawaban</a>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+
+
+                                                    </div>
+                                                    <div id="page3" hidden>
+                                                        <div class="bord mt-2">
+                                                            <img src="../assets/img/boy.png" width="auto" height="40px"
+                                                                alt=""> Ayo Berlatih
+                                                        </div>
+                                                        <div class="bordU">
+                                                            Hitunglah banyak benda.
+                                                            <span>
+                                                                <ul class="nav nav-tabs mb-3" role="tablist">
+                                                                    <li class="nav-item"><a class="nav-link active"
+                                                                            data-toggle="tab" href="#contoh1"><span><i
+                                                                                    class="icon-note"></i>
+                                                                                1</span></a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a class="nav-link"
+                                                                            data-toggle="tab" href="#contoh2"><span><i
+                                                                                    class="icon-note"></i>
+                                                                                2</span></a>
+                                                                    </li>
+                                                                </ul>
+                                                                <!-- Tab panes -->
+                                                                <div class="tab-content tabcontent-border">
+                                                                    <div class="tab-pane fade show active" id="contoh1"
+                                                                        role="tabpanel">
+                                                                        <div class="p-t-15">
+                                                                            <h4>1. Bandingkan banyak benda
+                                                                            </h4>
+                                                                            <div class="brs">
+                                                                                <img src="../assets/img/gambar13.png"
+                                                                                    alt="">
+                                                                                <p>
+                                                                                    Benda mana yang jumlahnya lebih
+                                                                                    banyak? <input type="text"
+                                                                                        id="jawabB">
+                                                                                </p>
+                                                                                <p>
+                                                                                    Benda mana yang jumlahnya lebih
+                                                                                    sedikit? <input type="text"
+                                                                                        id="jawabA">
+                                                                                </p>
+                                                                            </div>
+                                                                            <a onclick="cekberlatih21_1()" type="button"
+                                                                                class="ml-2 btn text-white btn-primary">Cek
+                                                                                Jawaban</a>
+                                                                            <div class="brs">
+                                                                                <img src="../assets/img/gambar14.png"
+                                                                                    alt="">
+                                                                                <p>
+                                                                                    Benda mana yang jumlahnya lebih
+                                                                                    banyak? <input type="text"
+                                                                                        id="jawabA">
+                                                                                </p>
+                                                                                <p>
+                                                                                    Benda mana yang jumlahnya lebih
+                                                                                    sedikit? <input type="text"
+                                                                                        id="jawabB">
+                                                                                </p>
+                                                                            </div>
+                                                                            <a onclick="cekberlatih21_2()" type="button"
+                                                                                class="ml-2 btn text-white btn-primary">Cek
+                                                                                Jawaban</a>
+                                                                            <div class="brs">
+                                                                                <img src="../assets/img/gambar15.png"
+                                                                                    alt="">
+                                                                                <p>
+                                                                                    Apakah jumlah benda pada kotak A
+                                                                                    dan B sama banyak? <input
+                                                                                        type="text" id="jawabYa">
+                                                                                </p>
+
+                                                                            </div>
+                                                                            <a onclick="cekberlatih21_3()" type="button"
+                                                                                class="ml-2 btn text-white btn-primary">Cek
+                                                                                Jawaban</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab-pane fade" id="contoh2"
+                                                                        role="tabpanel">
+                                                                        <div class="p-t-15">
+                                                                            <h4>2. Pilih kotak benda yang jumlahnya
+                                                                                lebih banyak.</h4>
+                                                                            <div class="abjad">
+                                                                                <ol>
+                                                                                    <li>
+                                                                                        <a onclick="jwbsalah()"><img
+                                                                                                src="../assets/img/gbr1.png"
+                                                                                                alt=""></a>
+                                                                                        <a onclick="jwbbenar()"><img
+                                                                                                src="../assets/img/gbr2.png"
+                                                                                                alt=""></a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a onclick="jwbbenar()"><img
+                                                                                                src="../assets/img/gbr3.png"
+                                                                                                alt=""></a>
+                                                                                        <a onclick="jwbsalah()"><img
+                                                                                                src="../assets/img/gbr4.png"
+                                                                                                alt=""></a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a onclick="jwbsalah()"><img
+                                                                                                src="../assets/img/gbr5.png"
+                                                                                                alt=""></a>
+                                                                                        <a onclick="jwbbenar()"><img
+                                                                                                src="../assets/img/gbr6.png"
+                                                                                                alt=""></a>
+                                                                                    </li>
+                                                                                </ol>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg">
+                                <div class="bootstrap-pagination" style="margin-top: -20px;">
+                                    <nav>
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item disabled" id="btnkembali"><a
+                                                    class="page-link text-white bg-danger" id="kembali" onclick=""
+                                                    tabindex="-1"><i class="fa fa-arrow-circle-left"
+                                                        aria-hidden="true"></i>
+                                                    Kembali</a>
+                                            </li>
+
+                                            <li class="page-item" id="btnlanjut"><a
+                                                    class="page-link text-white bg-success" id="lanjut"
+                                                    onclick="page2();">Lanjut <i class="fa fa-arrow-circle-right"
+                                                        aria-hidden="true"></i></a>
+                                            </li>
+                                            <li class="page-item" id="btnmaterilanjut" hidden><a class="page-link"
+                                                    id="materilanjut" href="bilangan3.html">Materi Selanjutnya <i
+                                                        class="fa fa-forward" aria-hidden="true"></i></a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <!-- <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy;2023 <a href="https://themeforest.net/user/quixlab">Luriyan Apris Al-Banjari</a></p>
+            </div>
+        </div> -->
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="../assets/plugins/common/common.min.js"></script>
+    <script src="../assets/js/custom.min.js"></script>
+    <script src="../assets/js/settings.js"></script>
+    <script src="../assets/js/gleek.js"></script>
+    <script src="../assets/js/styleSwitcher.js"></script>
+
+    <!-- Chartjs -->
+    <script src="../assets/plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="../assets/plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+    <script src="../assets/plugins/d3v3/index.js"></script>
+    <script src="../assets/plugins/topojson/topojson.min.js"></script>
+    <script src="../assets/plugins/datamaps/datamaps.world.min.js"></script>
+    <!-- Morrisjs -->
+    <script src="../assets/plugins/raphael/raphael.min.js"></script>
+    <script src="../assets/plugins/morris/morris.min.js"></script>
+    <!-- Pignose Calender -->
+    <script src="../assets/plugins/moment/moment.min.js"></script>
+    <script src="../assets/plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="../assets/plugins/chartist/js/chartist.min.js"></script>
+    <script src="../assets/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="../assets/js/dashboard/dashboard-1.js"></script>
+    <script src="../assets/plugins/sweetalert/js/sweetalert.min.js"></script>
+    <script src="../assets/plugins/sweetalert/js/sweetalert.init.js"></script>
+
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

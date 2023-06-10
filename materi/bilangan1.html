@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bilangan</title>
+    <!-- Favicon icon -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png"> -->
+    <!-- Pignose Calender -->
+    <link href="../assets/plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <!-- Chartist -->
+    <link rel="stylesheet" href="../assets/plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="../assets/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <!-- Custom Stylesheet -->
+    <link href="../assets/plugins/sweetalert/css/sweetalert.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <style>
+        div>ul>li {
+            list-style: square;
+            margin-left: 40px;
+        }
+
+        div>ol>li {
+            list-style: number;
+            margin-left: 40px;
+        }
+
+        .abjad>ol>li {
+            list-style: lower-latin;
+            margin-left: 40px;
+        }
+    </style>
+
+</head>
+
+<body style="overflow: hidden;">
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header bg-warning">
+            <div class="brand-logo">
+                <a href="../index.html">
+                    <b class="logo-abbr text-white"><i class="icon-home"></i></b>
+                    <span class="logo-compact"><i class="icon-home"></i></span>
+                    <span class="brand-title text-white"><i class="icon-home"></i>
+                        Bilangan
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header bg-primary">
+            <div class="header-content clearfix">
+
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-left">
+
+                </div>
+                <div class="header-right text-white mt-3 mr-3">
+                    <span>Menghitung,Membaca,dan Menulis Bilangan</span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar bg-warning">
+            <div class="nk-nav-scroll bg-warning">
+                <div class="text-center">
+                    <img src="../assets/images/user/form-user.png" width="40%" alt="">
+                    <div class="text-white" style="width: 100%;">Maria Manurung</div>
+                </div>
+                <ul class="metismenu bg-warning" id="menu">
+                    <li class="nav-label">Daftar Isi</li>
+
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i> <span class="nav-text">Ayo Membilang Sampai dengan
+                                10</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="pengantar1.html">Pengantar</a></li>
+                            <li><a href="bilangan1.html">Menghitung, Membaca dan Menulis Bilangan</a></li>
+                            <li><a href="bilangan2.html">Membandingkan Banyak Benda</a></li>
+                            <li><a href="bilangan3.html">Menghitung Maju dan Mundur</a></li>
+                            <li><a href="bilangan4.html">Pasangan Bilangan</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i> <span class="nav-text">Penjumlahan Sampai dengan
+                                10</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="pengantar2.html">Pengantar</a></li>
+                            <li><a href="penjumlahan1.html">Cerita Penjumlahan</a></li>
+                            <li><a href="penjumlahan2.html">Berbagai Cara Melakukan Penjumlahan</a></li>
+                            <li><a href="penjumlahan3.html">Soal Cerita Penjumlahan</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i> <span class="nav-text">Pengurangan Sampai dengan
+                                10</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="pengantar3.html">Pengantar</a></li>
+                            <li><a href="pengurangan1.html">Cerita Pengurangan</a></li>
+                            <li><a href="pengurangan2.html">Berbagai Cara Melakukan Pengurangan</a></li>
+                            <li><a href="pengurangan3.html">Hubungan Penjumlahan dengan Pengurangan</a></li>
+                            <li><a href="pengurangan4.html">Soal Cerita Pengurangan</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="rangkuman.html" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">Rangkuman</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="evaluasi.html" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">Evaluasi</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="container-fluid mt-3">
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="row">
+                            <div class="col-lg">
+                                <div class="card isicontent" style="height: 530px; width: 100%;">
+                                    <div class="card-body justify-content-between">
+                                        <div class="content">
+                                            <div class="card-content">
+                                                <!-- Pendahuluan -->
+
+                                                <div class="content-card">
+                                                    <h1><u>Menghitung,Membaca,dan Menulis Bilangan</u></h1>
+                                                    <div id="page1">
+                                                        <div class="row">
+                                                            <div class="col-lg-7">
+                                                                <div class="bordU" style="font-size: 18pt;">
+                                                                    <div class="text-center">
+                                                                        Di Taman Bermain
+                                                                    </div>
+                                                                    <div class="ml-4">
+                                                                        Malosi dan teman-teman bermain di taman. <br>
+                                                                        Mereka memainkan benda-benda di taman. <br>
+                                                                        Mereka sangat senang. <br>
+                                                                        Mereka bermain dengan aman.
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5">
+                                                                <img src="../assets/img/gambar1.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="bord mt-2">
+                                                            Aku akan belajar : <img src="../assets/img/boy.png" alt=""
+                                                                width="20%">
+                                                        </div>
+
+                                                        <div class="text-center">
+                                                            <img src="../assets/img/ayobelajar1.png" alt="">
+                                                        </div>
+                                                        <center>
+                                                            <div class="table-responsive">
+                                                                <table class="table text-center border header-border"
+                                                                    style="width: 50%;">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Benda</th>
+                                                                            <th>Bingkai 10</th>
+                                                                            <th>Lambang Bilangan</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <img src="../assets/img/benda1.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <img src="../assets/img/bingkai1.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="h4">1</div>
+                                                                                SA-TU
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <img src="../assets/img/benda2.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <img src="../assets/img/bingkai2.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="h4">2</div>
+                                                                                DUA
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <img src="../assets/img/benda3.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <img src="../assets/img/bingkai3.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="h4">3</div>
+                                                                                TI-GA
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <img src="../assets/img/benda4.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <img src="../assets/img/bingkai4.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="h4">4</div>
+                                                                                EM-PAT
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <img src="../assets/img/benda5.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <img src="../assets/img/bingkai5.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="h4">5</div>
+                                                                                LI-MA
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <img src="../assets/img/benda6.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <img src="../assets/img/bingkai6.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="h4">6</div>
+                                                                                E-NAM
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <img src="../assets/img/benda7.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <img src="../assets/img/bingkai7.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="h4">7</div>
+                                                                                TU-JUH
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <img src="../assets/img/benda8.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <img src="../assets/img/bingkai8.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="h4">8</div>
+                                                                                DE-LA-PAN
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <img src="../assets/img/benda9.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <img src="../assets/img/bingkai9.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="h4">9</div>
+                                                                                SEM-BI-LAN
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <img src="../assets/img/benda10.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <img src="../assets/img/bingkai10.png"
+                                                                                    alt="">
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="h4">10</div>
+                                                                                SE-PU-LUH
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </center>
+                                                    </div>
+                                                    <div id="page2" hidden>
+                                                        <div class="bord">
+                                                            <img src="../assets/img/to-do-list.png" width="auto"
+                                                                height="40px" alt=""> Ayo Mencoba
+                                                        </div>
+                                                        <div class="bordU2">
+                                                            <div class="text-center">
+                                                                Amati gambar berikut. Hitunglah banyaknya.
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-lg">
+                                                                    <div>
+                                                                        <ul>
+                                                                            <li>
+                                                                                Mata
+                                                                            </li>
+                                                                            <li>
+                                                                                Hidung
+                                                                            </li>
+                                                                            <li>
+                                                                                Telinga
+                                                                            </li>
+                                                                            <li>
+                                                                                Tangan
+                                                                            </li>
+                                                                            <li>
+                                                                                Kaki
+                                                                            </li>
+                                                                            <li>
+                                                                                Jari Tangan
+                                                                            </li>
+                                                                            <li>
+                                                                                Jari Kaki
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg">
+                                                                    <img src="../assets/img/boy2.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="brs">
+                                                                Hitunglah banyak benda berikut.
+                                                            </div>
+                                                            <div class="brs">
+                                                                Pasangkan dengan bilangannya
+                                                            </div>
+                                                            <center>
+                                                                <div class="table-responsive">
+                                                                    <table class="table text-center header-border">
+
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <img src="../assets/img/contoh1.png"
+                                                                                        alt="">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div id="satudrop" class="kotakdrop"
+                                                                                        ondrop="drop(event)"
+                                                                                        ondragover="allowDrop(event)">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <img id="satudrag" title="satudrag"
+                                                                                        src="../assets/img/satu.png"
+                                                                                        alt="" draggable="true"
+                                                                                        ondragstart="drag(event)">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <img src="../assets/img/contoh2.png"
+                                                                                        alt="">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div id="duadrop" class="kotakdrop"
+                                                                                        ondrop="drop(event)"
+                                                                                        ondragover="allowDrop(event)">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <img id="duadrag" title="duadrag"
+                                                                                        src="../assets/img/dua.png"
+                                                                                        alt="" draggable="true"
+                                                                                        ondragstart="drag(event)">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <img src="../assets/img/contoh3.png"
+                                                                                        alt="">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div id="tigadrop" class="kotakdrop"
+                                                                                        ondrop="drop(event)"
+                                                                                        ondragover="allowDrop(event)">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <img id="tigadrag" title="tigadrag"
+                                                                                        src="../assets/img/tiga.png"
+                                                                                        alt="" draggable="true"
+                                                                                        ondragstart="drag(event)">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <img src="../assets/img/contoh4.png"
+                                                                                        alt="">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div id="empatdrop"
+                                                                                        class="kotakdrop"
+                                                                                        ondrop="drop(event)"
+                                                                                        ondragover="allowDrop(event)">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <img id="empatdrag"
+                                                                                        title="empatdrag"
+                                                                                        src="../assets/img/empat.png"
+                                                                                        alt="" draggable="true"
+                                                                                        ondragstart="drag(event)">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <img src="../assets/img/contoh5.png"
+                                                                                        alt="">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div id="limadrop" class="kotakdrop"
+                                                                                        ondrop="drop(event)"
+                                                                                        ondragover="allowDrop(event)">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <img id="limadrag" title="limadrag"
+                                                                                        src="../assets/img/tiga.png"
+                                                                                        alt="" draggable="true"
+                                                                                        ondragstart="drag(event)">
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </center>
+                                                            <a onclick="cekjawaban1()" type="button"
+                                                                class="btn btn-primary">Cek Jawaban</a>
+                                                        </div>
+                                                        <div class="bord mt-2">
+                                                            <img src="../assets/img/desain modul .png" width="auto"
+                                                                height="40px" alt=""> Ayo Bermain
+                                                        </div>
+                                                        <div class="bordU">
+                                                            <div class="row">
+                                                                <div class="col-lg-8">
+                                                                    <div>
+                                                                        Bermainlah dengan seorang teman
+                                                                        <ul>
+                                                                            <li>
+                                                                                Pilihlah satu bilangan.
+                                                                            </li>
+                                                                            <li>
+                                                                                Temukan benda yang jumlahnya sama dengan
+                                                                                bilangan pilihan kalian.
+                                                                            </li>
+                                                                            <li>
+                                                                                Siapa yang paling cepat dan benar
+                                                                                menjadi pemenang.
+                                                                            </li>
+                                                                        </ul>
+                                                                        <img src="../assets/img/gambar3.png" alt="">
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <img src="../assets/img/gambar2.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="bord mt-2">
+                                                            <img src="../assets/img/boy.png" width="auto" height="40px"
+                                                                alt=""> Ayo Berlatih
+                                                        </div>
+                                                        <div class="bordU">
+                                                            Hitunglah banyak benda.
+                                                            <span>
+                                                                <ul class="nav nav-tabs mb-3" role="tablist">
+                                                                    <li class="nav-item"><a class="nav-link active"
+                                                                            data-toggle="tab" href="#contoh1"><span><i
+                                                                                    class="icon-note"></i> 1</span></a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a class="nav-link"
+                                                                            data-toggle="tab" href="#contoh2"><span><i
+                                                                                    class="icon-note"></i> 2</span></a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a class="nav-link"
+                                                                            data-toggle="tab" href="#contoh3"><span><i
+                                                                                    class="icon-note"></i> 3</span></a>
+                                                                    </li>
+                                                                </ul>
+                                                                <!-- Tab panes -->
+                                                                <div class="tab-content tabcontent-border">
+                                                                    <div class="tab-pane fade show active" id="contoh1"
+                                                                        role="tabpanel">
+                                                                        <div class="p-t-15">
+                                                                            <h4>1. Pasangkan benda yang sama banyak.
+                                                                            </h4>
+                                                                            <div class="table-responsive">
+                                                                                <table
+                                                                                    class="table text-center header-border"
+                                                                                    style="width: 50%;">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_1.png"
+                                                                                                    alt="">
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <div id="berlatih1_1drop"
+                                                                                                    class="kotakdrop"
+                                                                                                    ondrop="drop(event)"
+                                                                                                    ondragover="allowDrop(event)">
+                                                                                                </div>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <img id="berlatih1_1drag"
+                                                                                                    title="berlatih1_1drag"
+                                                                                                    src="../assets/img/bingkai1.png"
+                                                                                                    alt=""
+                                                                                                    draggable="true"
+                                                                                                    ondragstart="drag(event)">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_2.png"
+                                                                                                    alt="">
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <div id="berlatih1_2drop"
+                                                                                                    class="kotakdrop"
+                                                                                                    ondrop="drop(event)"
+                                                                                                    ondragover="allowDrop(event)">
+                                                                                                </div>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <img id="berlatih1_2drag"
+                                                                                                    title="berlatih1_2drag"
+                                                                                                    src="../assets/img/bingkai2.png"
+                                                                                                    alt=""
+                                                                                                    draggable="true"
+                                                                                                    ondragstart="drag(event)">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_3.png"
+                                                                                                    alt="">
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <div id="berlatih1_3drop"
+                                                                                                    class="kotakdrop"
+                                                                                                    ondrop="drop(event)"
+                                                                                                    ondragover="allowDrop(event)">
+                                                                                                </div>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <img id="berlatih1_3drag"
+                                                                                                    title="berlatih1_3drag"
+                                                                                                    src="../assets/img/bingkai3.png"
+                                                                                                    alt=""
+                                                                                                    draggable="true"
+                                                                                                    ondragstart="drag(event)">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_4.png"
+                                                                                                    alt="">
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <div id="berlatih1_4drop"
+                                                                                                    class="kotakdrop"
+                                                                                                    ondrop="drop(event)"
+                                                                                                    ondragover="allowDrop(event)">
+                                                                                                </div>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <img id="berlatih1_4drag"
+                                                                                                    title="berlatih1_4drag"
+                                                                                                    src="../assets/img/bingkai4.png"
+                                                                                                    alt=""
+                                                                                                    draggable="true"
+                                                                                                    ondragstart="drag(event)">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_5.png"
+                                                                                                    alt="">
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <div id="berlatih1_5drop"
+                                                                                                    class="kotakdrop"
+                                                                                                    ondrop="drop(event)"
+                                                                                                    ondragover="allowDrop(event)">
+                                                                                                </div>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <img id="berlatih1_5drag"
+                                                                                                    title="berlatih1_5drag"
+                                                                                                    src="../assets/img/bingkai5.png"
+                                                                                                    alt=""
+                                                                                                    draggable="true"
+                                                                                                    ondragstart="drag(event)">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            <a onclick="cekberlatih1_1()" type="button"
+                                                                                class="btn btn-primary">Cek Jawaban</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab-pane fade" id="contoh2"
+                                                                        role="tabpanel">
+                                                                        <div class="p-t-15">
+                                                                            <h4>2. Pasangkan dengan bilangannya, Hitung
+                                                                                banyak benda berikut.</h4>
+                                                                            <div class="table-responsive">
+                                                                                <table
+                                                                                    class="table text-center header-border"
+                                                                                    style="width: 50%;">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih2_1.png"
+                                                                                                    alt="">
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <div id="berlatih2_1drop"
+                                                                                                    class="kotakdrop"
+                                                                                                    ondrop="drop(event)"
+                                                                                                    ondragover="allowDrop(event)">
+                                                                                                </div>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <img id="berlatih2_1drag"
+                                                                                                    title="berlatih2_1drag"
+                                                                                                    src="../assets/img/angka1.png"
+                                                                                                    width="60%"
+                                                                                                    height="auto" alt=""
+                                                                                                    draggable="true"
+                                                                                                    ondragstart="drag(event)">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih2_2.png"
+                                                                                                    alt="">
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <div id="berlatih2_2drop"
+                                                                                                    class="kotakdrop"
+                                                                                                    ondrop="drop(event)"
+                                                                                                    ondragover="allowDrop(event)">
+                                                                                                </div>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <img id="berlatih2_2drag"
+                                                                                                    title="berlatih2_2drag"
+                                                                                                    src="../assets/img/angka2.png"
+                                                                                                    width="60%"
+                                                                                                    height="auto" alt=""
+                                                                                                    draggable="true"
+                                                                                                    ondragstart="drag(event)">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih2_3.png"
+                                                                                                    alt="">
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <div id="berlatih2_3drop"
+                                                                                                    class="kotakdrop"
+                                                                                                    ondrop="drop(event)"
+                                                                                                    ondragover="allowDrop(event)">
+                                                                                                </div>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <img id="berlatih2_3drag"
+                                                                                                    title="berlatih2_3drag"
+                                                                                                    src="../assets/img/angka3.png"
+                                                                                                    width="60%"
+                                                                                                    height="auto" alt=""
+                                                                                                    draggable="true"
+                                                                                                    ondragstart="drag(event)">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih2_4.png"
+                                                                                                    alt="">
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <div id="berlatih2_4drop"
+                                                                                                    class="kotakdrop"
+                                                                                                    ondrop="drop(event)"
+                                                                                                    ondragover="allowDrop(event)">
+                                                                                                </div>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <img id="berlatih2_4drag"
+                                                                                                    title="berlatih2_4drag"
+                                                                                                    src="../assets/img/angka4.png"
+                                                                                                    width="60%"
+                                                                                                    height="auto" alt=""
+                                                                                                    draggable="true"
+                                                                                                    ondragstart="drag(event)">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih2_5.png"
+                                                                                                    alt="">
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <div id="berlatih2_5drop"
+                                                                                                    class="kotakdrop"
+                                                                                                    ondrop="drop(event)"
+                                                                                                    ondragover="allowDrop(event)">
+                                                                                                </div>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <img id="berlatih2_5drag"
+                                                                                                    title="berlatih2_5drag"
+                                                                                                    src="../assets/img/angka5.png"
+                                                                                                    width="60%"
+                                                                                                    height="auto" alt=""
+                                                                                                    draggable="true"
+                                                                                                    ondragstart="drag(event)">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            <a onclick="cekberlatih1_2()" type="button"
+                                                                                class="btn btn-primary">Cek Jawaban</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab-pane fade" id="contoh3"
+                                                                        role="tabpanel">
+                                                                        <div class="p-t-15">
+                                                                            <h4>3. Warnai sesuai permintaan</h4>
+                                                                            <div class="brs">
+                                                                                Contoh :
+                                                                            </div>
+                                                                            <div class="brs">
+                                                                                5 bola warna merah
+                                                                            </div>
+                                                                            <div class="brs">
+                                                                                <img src="../assets/img/contoh1_3.png"
+                                                                                    alt="">
+                                                                            </div>
+                                                                            <div class="abjad">
+                                                                                <ol type="a">
+                                                                                    <li>
+                                                                                        4 bola warna biru
+                                                                                        <div>
+                                                                                            <img src="../assets/img/contoh1_31.png"
+                                                                                                alt="">
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        6 bola warna kuning
+                                                                                        <div>
+                                                                                            <img src="../assets/img/contoh1_31.png"
+                                                                                                alt="">
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        7 bola warna merah
+                                                                                        <div>
+                                                                                            <img src="../assets/img/contoh1_31.png"
+                                                                                                alt="">
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        5 bola warna biru
+                                                                                        <div>
+                                                                                            <img src="../assets/img/contoh1_31.png"
+                                                                                                alt="">
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </ol>
+                                                                            </div>
+                                                                            <a onclick="cekberlatih1_3()" type="button"
+                                                                                class="btn btn-primary">Cek Jawaban</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                        </div>
+
+                                                    </div>
+                                                    <div id="page3" hidden>
+                                                        <h4>Mengenal Bilangan 0 (Nol)</h4>
+                                                        <center>
+                                                            <img src="../assets/img/gambar4.png" alt="">
+                                                        </center>
+                                                        <div class="row">
+                                                            <div class="col-lg">
+                                                                <center>
+                                                                    <img src="../assets/img/nol1.png" alt=""> <br>
+                                                                    Banyak bola ada <input type="text" id="nol1">
+                                                                </center>
+                                                            </div>
+                                                            <div class="col-lg">
+                                                                <center>
+                                                                    <img src="../assets/img/nol2.png" alt=""> <br>
+                                                                    Banyak bola ada <input type="text" id="nol2">
+                                                                </center>
+                                                            </div>
+                                                        </div>
+                                                        <a onclick="cekberlatih1_3()" type="button"
+                                                            class="btn btn-primary">Cek Jawaban</a>
+                                                        <div class="bord mt-2">
+                                                            <img src="../assets/img/to-do-list.png" width="auto"
+                                                                height="40px" alt=""> Ayo Mencoba
+                                                        </div>
+                                                        <div class="bordU">
+                                                            <h4>Contoh :</h4>
+                                                            <img src="../assets/img/mencoba.png" alt="">
+                                                            <div class="abjad">
+                                                                <ol>
+                                                                    <li>
+                                                                        Tunjukkan bilangan 0 sampai 10 dengan jari
+                                                                        tangan kalian.
+                                                                    </li>
+                                                                    <li>
+                                                                        Tunjukkan bilanngan 7 dengan jari tangan kalian.
+                                                                        Tunjukkan dengan 2 cara.
+                                                                    </li>
+                                                                    <li>
+                                                                        Tunjukkan bilangan 8 dengan jari tangan kalian
+                                                                    </li>
+                                                                </ol>
+                                                            </div>
+                                                        </div>
+                                                        <div class="bord mt-2">
+                                                            <img src="../assets/img/boy.png" width="auto" height="40px"
+                                                                alt=""> Ayo Berlatih
+                                                        </div>
+                                                        <div class="bordU">
+                                                            Hitunglah banyak benda.
+                                                            <span>
+                                                                <ul class="nav nav-tabs mb-3" role="tablist">
+                                                                    <li class="nav-item"><a class="nav-link active"
+                                                                            data-toggle="tab" href="#contoh4"><span><i
+                                                                                    class="icon-note"></i> 1</span></a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a class="nav-link"
+                                                                            data-toggle="tab" href="#contoh5"><span><i
+                                                                                    class="icon-note"></i> 2</span></a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a class="nav-link"
+                                                                            data-toggle="tab" href="#contoh6"><span><i
+                                                                                    class="icon-note"></i> 3</span></a>
+                                                                    </li>
+                                                                </ul>
+                                                                <!-- Tab panes -->
+                                                                <div class="tab-content tabcontent-border">
+                                                                    <div class="tab-pane fade show active" id="contoh4"
+                                                                        role="tabpanel">
+                                                                        <div class="p-t-15">
+                                                                            <h4>1. Tuliskan berapa jumlah yang ada pada
+                                                                                gambar.
+                                                                            </h4>
+                                                                            <div class="table-responsive">
+                                                                                <table
+                                                                                    class="table text-center header-border"
+                                                                                    style="width: 50%;">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_21.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_21">
+                                                                                            </td>
+
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_22.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_22">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_23.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_23">
+                                                                                            </td>
+
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_24.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_24">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_25.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_25">
+                                                                                            </td>
+
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_26.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_26">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_27.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_27">
+                                                                                            </td>
+
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_28.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_28">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_29.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_29">
+                                                                                            </td>
+
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_210.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_210">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_211.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_211">
+                                                                                            </td>
+
+                                                                                            <td>
+
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            <a onclick="cekberlatih12_1()" type="button"
+                                                                                class="ml-2 btn btn-primary">Cek
+                                                                                Jawaban</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab-pane fade" id="contoh5"
+                                                                        role="tabpanel">
+                                                                        <div class="p-t-15">
+                                                                            <h4>2. Pasangkan dengan bilangannya, Hitung
+                                                                                banyak benda berikut.</h4>
+                                                                            <div class="brs">
+                                                                                Contoh :
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-lg text-center">
+                                                                                    <img src="../assets/img/berlatih1_30.png"
+                                                                                        alt="">
+                                                                                    <br>
+                                                                                    <h3>0</h3>
+                                                                                </div>
+                                                                                <div class="col-lg">
+                                                                                    <img src="../assets/img/berlatih1_300.png"
+                                                                                        alt="">
+                                                                                </div>
+
+                                                                            </div>
+                                                                            <div class="table-responsive">
+                                                                                <table
+                                                                                    class="table text-center header-border"
+                                                                                    style="width: 50%;">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_31.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_31">
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_32.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_32">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_33.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_33">
+                                                                                            </td>
+
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_34.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_34">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_35.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_35">
+                                                                                            </td>
+
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_36.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_36">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_37.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_37">
+                                                                                            </td>
+
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_38.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_38">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_39.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_39">
+                                                                                            </td>
+
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_310.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_310">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            <a onclick="cekberlatih12_1()" type="button"
+                                                                                class="ml-2 btn btn-primary">Cek
+                                                                                Jawaban</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab-pane fade" id="contoh6"
+                                                                        role="tabpanel">
+                                                                        <div class="p-t-15">
+                                                                            <h4>3. Ayo menghitung banyak mainan.</h4>
+                                                                            <div class="brs">
+                                                                                <p>
+                                                                                    Wei pergi ke toko mainan.
+                                                                                </p>
+                                                                                <p>
+                                                                                    Wei melihat banyak mainan.
+                                                                                </p>
+                                                                                <p>
+                                                                                    Wei kesulitan menghitungnya.
+                                                                                </p>
+                                                                                <p>
+                                                                                    <img src="../assets/img/berlatih13_0.png"
+                                                                                        alt="">
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="table-responsive">
+                                                                                <table
+                                                                                    class="table text-center header-border"
+                                                                                    style="width: 50%;">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_41.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_41">
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_42.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_42">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_43.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_43">
+                                                                                            </td>
+
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_44.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_44">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="../assets/img/berlatih1_45.png"
+                                                                                                    alt="">
+                                                                                                <br>
+                                                                                                <input type="text"
+                                                                                                    class="text-center"
+                                                                                                    placeholder="Masukkan Jawaban Anda"
+                                                                                                    id="berlatih1_45">
+                                                                                            </td>
+
+                                                                                            <td>
+
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            <a onclick="cekberlatih13_1()" type="button"
+                                                                                class="ml-2 btn btn-primary">Cek
+                                                                                Jawaban</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </span>
+                                                        </div>
+                                                        <div class="bord mt-2">
+                                                            <img src="../assets/img/question.png" width="auto"
+                                                                height="40px" alt=""> Tahukah Kalian
+                                                        </div>
+                                                        <div class="bordU">
+                                                            <h4>Indonesia memiliki beragam bahasa daerah</h4>
+                                                            <img src="../assets/img/tahukah.png" alt="">
+                                                            <div class="brs">
+                                                                Bacalah dengan bahasa daerah kalian
+                                                            </div>
+                                                            <img src="../assets/img/tahukah2.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg">
+                                <div class="bootstrap-pagination" style="margin-top: -20px;">
+                                    <nav>
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item disabled" id="btnkembali"><a
+                                                    class="page-link text-white bg-danger" id="kembali" onclick=""
+                                                    tabindex="-1"><i class="fa fa-arrow-circle-left"
+                                                        aria-hidden="true"></i>
+                                                    Kembali</a>
+                                            </li>
+
+                                            <li class="page-item" id="btnlanjut"><a
+                                                    class="page-link text-white bg-success" id="lanjut"
+                                                    onclick="page2();">Lanjut <i class="fa fa-arrow-circle-right"
+                                                        aria-hidden="true"></i></a>
+                                            </li>
+                                            <li class="page-item" id="btnmaterilanjut" hidden><a class="page-link"
+                                                    id="materilanjut" href="bilangan2.html">Materi Selanjutnya <i
+                                                        class="fa fa-forward" aria-hidden="true"></i></a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <!-- <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy;2023 <a href="https://themeforest.net/user/quixlab">Luriyan Apris Al-Banjari</a></p>
+            </div>
+        </div> -->
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="../assets/plugins/common/common.min.js"></script>
+    <script src="../assets/js/custom.min.js"></script>
+    <script src="../assets/js/settings.js"></script>
+    <script src="../assets/js/gleek.js"></script>
+    <script src="../assets/js/styleSwitcher.js"></script>
+
+    <!-- Chartjs -->
+    <script src="../assets/plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="../assets/plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+    <script src="../assets/plugins/d3v3/index.js"></script>
+    <script src="../assets/plugins/topojson/topojson.min.js"></script>
+    <script src="../assets/plugins/datamaps/datamaps.world.min.js"></script>
+    <!-- Morrisjs -->
+    <script src="../assets/plugins/raphael/raphael.min.js"></script>
+    <script src="../assets/plugins/morris/morris.min.js"></script>
+    <!-- Pignose Calender -->
+    <script src="../assets/plugins/moment/moment.min.js"></script>
+    <script src="../assets/plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="../assets/plugins/chartist/js/chartist.min.js"></script>
+    <script src="../assets/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="../assets/js/dashboard/dashboard-1.js"></script>
+    <script src="../assets/plugins/sweetalert/js/sweetalert.min.js"></script>
+    <script src="../assets/plugins/sweetalert/js/sweetalert.init.js"></script>
+
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>
